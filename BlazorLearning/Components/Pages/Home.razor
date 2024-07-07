@@ -1,0 +1,60 @@
+﻿@page "/"
+
+<PageTitle>Blazor Learning</PageTitle>
+
+<h1>Hello, Welcome to Blazor Learning</h1>
+
+Lets explore Blazor Server, Blazor WebAssembly and Blazor Hybrid Apps.
+<br />
+<!-- Bullet List of things to do -->
+<b>TODO:</b>
+<ul>
+    <li>Get Publish to work from VS22 (from work and personal)</li>
+    <li>Decide and install UI framework (Fluent,Mud,etc) see: <a href="https://www.claudiobernasconi.ch/2023/05/25/8-free-and-open-source-blazor-ui-libraries/">8 Free open source blazor UIs</a></li>
+    <li>Experiment with deployment to HostGator, can this be deployed to my CMS, do I need a server, or just stick with Azure?</li>  
+    <li>Database up and running probably Azure SQL BUT keep in mind the idea of being able to port to mySQL or pgSQL if needed</li>
+    <li>API up and running for the database</li>
+    <ul>
+        <b>Credit card processing</b>
+        <li>In a perfect world be able to process a transaction for butcher and at the same time process a small payment for TMMP</li>
+        <li>OR to start just set up a merchant account for TMMP for accepting payment from butchers and keep track of processing fees to be billed daily, weekly, monthly?</li>
+    </ul>
+</ul>
+<b>DEV NOTES:</b>
+<ul>
+    <li>Keep in mind: How do we follow a "template" for the visual looks and feel of the website and later WASM?</li>
+    <li>Keep in mind: Portability and Simplicity. Would like to be able to deploy to a simple linux server if needed and make all db calls an API that could be tied to Azure SQL or mySQL on the backend if needed</li>
+    <br />
+    <li>Server: Geo location search for butchers and farmers but consider there might be other types later</li>
+    <ul>
+        <li>Home page is basically an intro and simple search for db entries with-in xx miles or xx type of services</li>
+        <li>Need to figure out how to convert an addres into longitude/latitude for geo locating nearby businesses</li>
+        <li>Form for adding, updating, and removing searchable database entries</li>
+        <li>Need a column for "AcceptingOrders" based on if they've paid their bill and thus are allowed to accept orders thru TMMP</li>
+    </ul>
+    <li>Server: Spot for Marketing, Help, etc</li>
+    <li>WASM: Once a user has a few prefered butchers or services save it off on the device (laptop, phone, tablet) and just push requests/orders BUT verify butcher is "AccpetingOrders" (read: paid and up to date)</li>
+    <li>WASM: Butcher specific interface(s) for processing cutsheets, order requests, scheduling, communicating w/customers</li>
+    <li>WASM or MAUI: For butcher to use devices for displaying schedule, cutsheet, and processing input from butcher processes</li>
+</ul>
+<b>SPECIAL CONSIDERATIONS:</b>
+<ul>
+    <li>Keep an eye on Azure costs while developing demo and using credit.</li>
+
+</ul>
+<b>LEARNING:</b>
+<ul>
+    <li>Blazor Server</li>
+    <li>Blazor WebAssembly</li>
+    <li>Blazor Hybrid Apps</li>
+    <li>Blazor Components</li>
+    <li>Blazor Routing</li>
+    <li>Blazor Forms</li>
+    <li>Blazor Validation</li>
+    <li>Blazor Security (can Azure security be used with Linux deployment)</li>
+    <li>Blazor Dependency Injection</li>
+    <li>Blazor State Management</li>
+    <li>Blazor Localization</li>
+    <li>Blazor Testing</li>
+    <li>Blazor Deployment to Azure or possibly a simple Linux Managed Server on HostGator</li>
+</ul>
